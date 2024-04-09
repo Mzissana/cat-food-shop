@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Мзиссана Куртанидзе](https://up.htmlacademy.ru/adaptive/31/user/2485227).
-* Наставник: [Александр Сударев] (https://htmlacademy.ru/profile/id1152185).
+* Наставник: [Александр Сударев](https://htmlacademy.ru/profile/id1152185).
 
 ---
 
