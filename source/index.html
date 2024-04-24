@@ -6,7 +6,10 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer>
   </script>
 </head>
@@ -14,11 +17,11 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img src="images/logo-mobile.png" alt="Логотип Cat Energy" width="33" height="38">
-    </a>
-
-    <a class="main-header__logo-text" href="index.html">
-      <img src="images/logo-text.svg" alt="Cat Energy" width="101" height="18">
+      <picture>
+        <source width="202" height="59" type="image/png" media="(min-width: 1440px)" srcset="images/logo-desktop@1x.png 1x, images/logo-desktop@2x.png 2x">
+        <source width="174" height="50" type="image/png" media="(min-width: 768px)" srcset="images/logo-tablet@1x.png 1x, images/logo-tablet@2x.png 2x">
+        <img src="images/logo-mobile@1x.png" srcset="images/logo-mobile@2x.png 2x" alt="Логотип Cat Energy" width="190" height="38">
+      </picture>
     </a>
 
     <nav class="main-nav">
@@ -54,7 +57,11 @@
         </h1>
         <p class="hero__description">Занялся собой? Займись котом!
         </p>
-        <img class="hero__image" src="images/product-chicken-tilted.png" width="280" height="270" alt="Упаковка корма Cat Energy с курицей">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/product-chicken-tilted-desktop@1x.png 1x, images/product-chicken-tilted-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 786px)" srcset="images/product-chicken-tilted-tablet@1x.png 1x, images/product-chicken-tilted-tablet@2x.png 2x">
+          <img class="hero__image" src="images/product-chicken-tilted-mobile@1x.png" srcset="images/product-chicken-tilted-mobile@2x.png 2x" width="280" height="270" alt="Упаковка корма Cat Energy с курицей">
+        </picture>
         <button class="hero__button button" type="button">
           Подобрать программу
         </button>
@@ -126,7 +133,17 @@
             </p>
           </li>
         </ul>
-        <img class="example__image" src="images/cat-before-after.png" alt="Борис с лишним весом, Борис в отличной форме" width="280" height="256">
+
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 786px)" srcset="images/cat-slider-before-tablet@1x.png 1x, images/cat-slider-before-tablet@2x.png 2x">
+          <img class="example__image--before" src="images/cat-slider-before-mobile@1x.png" srcset="images/cat-slider-before-mobile@2x.png 2x" alt="Борис с лишним весом" width="280" height="256">
+        </picture>
+
+        <picture>
+          <source width="560" height="512" type="image/png" media="(min-width: 786px)" srcset="images/cat-slider-after-tablet@1x.png 1x, images/cat-slider-after-tablet@2x.png 2x">
+          <img class="example__image--after" src="images/cat-slider-mobile@1x.png" srcset="images/cat-slider-after-mobile@2x.png 2x" alt="Борис в отличной форме" width="280" height="256">
+        </picture>
+
       </div>
     </section>
 
@@ -140,7 +157,12 @@
           </p>
         </div>
       </div>
-      <img class="location__map" src="images/location-map.jpg" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362">
+      <picture>
+        <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-map-desktop@1x.jpg 1x, images/location-map-desktop@2x.jpg 2x">
+        <source width="768" height="400" type="image/jpeg" media="(min-width: 786px)" srcset="images/location-map-tablet@1x.jpg 1x, images/location-map-tablet@2x.jpg 2x">
+        <img class="location__map" src="images/location-map-mobile@1x.jpg" srcset="images/location-map-mobile@2x.jpg" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362">
+      </picture>
+
     </section>
   </main>
 
