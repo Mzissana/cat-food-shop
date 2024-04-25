@@ -2,6 +2,39 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/visualy-hidden.scss";
+@import "./common/button.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+//index
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/plans.scss";
+@import "./blocks/plan.scss";
+@import "./blocks/instructions.scss";
+@import "./blocks/instruction.scss";
+@import "./blocks/example.scss";
+@import "./blocks/story.scss";
+@import "./blocks/weight-loss.scss";
+@import "./blocks/time.scss";
+@import "./blocks/cost.scss";
+@import "./blocks/location.scss";
+@import "./blocks/address-card.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/copyright.scss";
+
+//catalog
+@import "./blocks/catalog.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/more-products.scss";
+@import "./blocks/extra-goods.scss";
+@import "./blocks/section-subtitle.scss";
+@import "./blocks/extra-goods-card.scss";
+@import "./blocks/special-offer.scss";
+@import "./blocks/subscription.scss";
+@import "./blocks/subscription-form.scss";
