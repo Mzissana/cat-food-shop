@@ -1,11 +1,4 @@
-@font-face {
-  font-family: "Oswald";
-  src: url("../source/fonts/lato/oswaldregular.woff");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Lato";
-  src: url("source/fonts/lato/Lato-Regular.woff");
-  font-weight: 400;
-}
+@include font-face("Lato", url("../../fonts/lato/Lato-Regular.woff2") format("woff2"),
+url("../../fonts/lato/Lato-Regular.woff") format("woff"));
+@include font-face("Oswald", url("../../fonts/lato/oswaldregular.woff2") format("woff2"),
+url("../../fonts/lato/oswaldregular.woff") format("woff"));
