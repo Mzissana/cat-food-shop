@@ -1,9 +1,11 @@
 /* GLOBAL */
-@import "./common/fonts.scss";
-@import "common/mixins";
 @import "./common/variables.scss";
+@import "common/mixins";
+@import "./common/fonts.scss";
 @import "./common/global.scss";
 @import "./common/visualy-hidden.scss";
+@import "./common/link-reset.scss";
+@import "./common/button-reset.scss";
 @import "./common/button.scss";
 
 /* BLOCKS */
@@ -13,6 +15,8 @@
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/page-header";
+@import "./blocks/section.scss";
 @import "./blocks/plans.scss";
 @import "./blocks/plan.scss";
 @import "./blocks/instructions.scss";
