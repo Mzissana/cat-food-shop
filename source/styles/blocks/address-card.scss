@@ -1,0 +1,18 @@
+.address-card__title {
+  font-family: $title-font;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.address-card__street {
+  font-family: $content-font;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}

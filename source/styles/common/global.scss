@@ -7,3 +7,11 @@ body {
   background-color: var(--background-color);
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}

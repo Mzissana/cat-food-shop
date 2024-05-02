@@ -1,0 +1,18 @@
+.product-card__title {
+  font-family: $title-font;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.product-card__type,
+.product-card__value {
+  font-family: $content-font;
+  color: #444444;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}

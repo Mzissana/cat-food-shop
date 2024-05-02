@@ -2,4 +2,4 @@ $content-font: "Lato", sans-serif;
 $title-font: "Oswald", sans-serif;
 
 @include font-face("Lato", url("../../fonts/lato/Lato-Regular.woff2") format("woff2"));
-@include font-face("Oswald", url("../../fonts/lato/oswaldregular.woff2") format("woff2"));
+@include font-face("Oswald", url("../../fonts/oswald/oswaldregular.woff2") format("woff2"));
