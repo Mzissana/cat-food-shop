@@ -1,0 +1,20 @@
+.extra-goods-card__title {
+  font-family: $title-font;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.extra-goods-card__type,
+.extra-goods-card__value {
+  font-family: $content-font;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+}
+

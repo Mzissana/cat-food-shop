@@ -1,9 +1,9 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 @import "./common/visualy-hidden.scss";
-@import "./common/button.scss";
 
 /* BLOCKS */
 //index
@@ -12,6 +12,9 @@
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/button.scss";
+@import "./blocks/page-header";
+@import "./blocks/section.scss";
 @import "./blocks/plans.scss";
 @import "./blocks/plan.scss";
 @import "./blocks/instructions.scss";
@@ -33,7 +36,6 @@
 @import "./blocks/product-card.scss";
 @import "./blocks/more-products.scss";
 @import "./blocks/extra-goods.scss";
-@import "./blocks/section-subtitle.scss";
 @import "./blocks/extra-goods-card.scss";
 @import "./blocks/special-offer.scss";
 @import "./blocks/subscription.scss";
