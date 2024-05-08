@@ -6,3 +6,21 @@
   line-height: 20px;
   text-align: left;
 }
+
+.copyright__link-icon {
+  color: #666666;
+}
+
+.copyright__link:hover .copyright__link-icon {
+  color: #68b738;
+}
+
+.copyright__link:active .copyright__link-icon {
+  color: #68b738;
+  opacity: 0.3;
+}
+
+.copyright__link:active .copyright__text {
+  opacity: 0.3;
+}
+

@@ -1,3 +1,112 @@
+.instructions {
+  background-image: url("../../icons/stack.svg#leaf-icon");
+  //url("../../icons/stack.svg#water-icon")
+  //url("../../icons/stack.svg#food-icon")
+  //url("../../icons/stack.svg#time-icon")
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+}
+
+.instructions__item {
+  position: relative;
+}
+
+.instruction--nutrients {
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#leaf-icon");
+    background-size: 36px 50px;
+    height: 50px;
+    width: 36px;
+    background-repeat: no-repeat;
+    top: 7px;
+    left: 12px;
+  }
+}
+
+.instruction--water {
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#water-icon");
+    background-size: 36px 50px;
+    height: 50px;
+    width: 36px;
+    background-repeat: no-repeat;
+    top: 7px;
+    left: 12px;
+  }
+}
+
+.instruction--meal {
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#food-icon");
+    background-size: 36px 50px;
+    height: 50px;
+    width: 36px;
+    background-repeat: no-repeat;
+    top: 7px;
+    left: 12px;
+  }
+}
+
+.instruction--time {
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #68b738;
+    height: 60px;
+    width: 60px;
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#time-icon");
+    background-size: 36px 50px;
+    height: 50px;
+    width: 36px;
+    background-repeat: no-repeat;
+    top: 7px;
+    left: 12px;
+  }
+}
+
 .instruction__description {
   font-family: $content-font;
   color: #444444;

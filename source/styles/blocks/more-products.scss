@@ -1,3 +1,7 @@
+.catalog__more {
+  position: relative;
+}
+
 .more-products__header {
   font-family: $title-font;
   color: #111111;
@@ -6,7 +10,20 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#more-icon");
+    background-size: 30px 30px;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    top: 7px;
+    left: 12px;
+  }
 }
+
 
 .more-products__description {
   font-family: $content-font;
