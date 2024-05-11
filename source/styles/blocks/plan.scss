@@ -1,9 +1,12 @@
 .plan {
   background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 33px 18px 20px;
 }
 
-.plans__item {
-  position: relative;
+.plan__title {
+  padding-left: 70px;
 }
 
 .plan--lose-weight {
@@ -14,8 +17,8 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    top: 21px;
-    left: 10px;
+    top: 24px;
+    left: 20px;
   }
 
   &::after {
@@ -26,8 +29,8 @@
     height: 50px;
     width: 36px;
     background-repeat: no-repeat;
-    top: 18px;
-    left: 16px;
+    top: 21px;
+    left: 26px;
   }
 }
 
@@ -39,8 +42,8 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    top: 24px;
-    left: 10px;
+    top: 25px;
+    left: 20px;
   }
 
   &::after {
@@ -51,9 +54,14 @@
     height: 28px;
     width: 70px;
     background-repeat: no-repeat;
-    top: 35px;
-    left: 0;
+    top: 38px;
+    left: 10;
   }
+}
+
+.plan__description {
+  padding-top: 22px;
+  padding-bottom: 23px;
 }
 
 .plan__link {
@@ -66,6 +74,7 @@
   background-image: url("../../icons/stack.svg#arrow-icon");
   background-size: 24px 12px;
   background-repeat: no-repeat;
+  background-position: 102px;
 
   &:active {
     opacity: 0.3;

@@ -1,0 +1,15 @@
+.plans__wrapper {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.plans__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plans__item {
+  position: relative;
+}
+
