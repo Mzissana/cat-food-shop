@@ -1,14 +1,7 @@
-.instructions {
-  background-image: url("../../icons/stack.svg#leaf-icon");
-  //url("../../icons/stack.svg#water-icon")
-  //url("../../icons/stack.svg#food-icon")
-  //url("../../icons/stack.svg#time-icon")
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-}
+
 
 .instructions__wrapper {
-  padding: 0 20px 20px;
+  padding: 0 20px 49px;
 }
 
 .instructions__item {
@@ -22,7 +15,7 @@
     background-color: #68b738;
     height: 60px;
     width: 60px;
-    top: 0;
+    top: 10;
     left: 0;
   }
 
@@ -34,7 +27,7 @@
     height: 50px;
     width: 36px;
     background-repeat: no-repeat;
-    top: 7px;
+    top: 17px;
     left: 12px;
   }
 }
@@ -46,7 +39,7 @@
     background-color: #68b738;
     height: 60px;
     width: 60px;
-    top: 0;
+    top: 10;
     left: 0;
   }
 
@@ -58,7 +51,7 @@
     height: 50px;
     width: 36px;
     background-repeat: no-repeat;
-    top: 7px;
+    top: 17px;
     left: 12px;
   }
 }
@@ -70,7 +63,7 @@
     background-color: #68b738;
     height: 60px;
     width: 60px;
-    top: 0;
+    top: 10;
     left: 0;
   }
 
@@ -82,7 +75,7 @@
     height: 50px;
     width: 36px;
     background-repeat: no-repeat;
-    top: 7px;
+    top: 17px;
     left: 12px;
   }
 }
@@ -94,7 +87,7 @@
     background-color: #68b738;
     height: 60px;
     width: 60px;
-    top: 0;
+    top: 10;
     left: 0;
   }
 
@@ -106,7 +99,7 @@
     height: 50px;
     width: 36px;
     background-repeat: no-repeat;
-    top: 7px;
+    top: 17px;
     left: 12px;
   }
 }
@@ -118,4 +111,5 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
+  width: 200px;
 }
