@@ -1,7 +1,4 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: #ffffff;
   background-image: image-set("../../images/hungry-cat-mobile@1x.jpg" 1x, "../../images/hungry-cat-mobile@2x.jpg" 2x);
   background-repeat: no-repeat;
@@ -18,7 +15,14 @@
     background-repeat: no-repeat;
     background-size: 720px, 694px;
     color: #000000;
+    background-position: right;
   }
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
@@ -37,3 +41,4 @@
   height: 40px;
   padding: 10px;
 }
+

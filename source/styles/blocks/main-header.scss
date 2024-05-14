@@ -1,9 +1,27 @@
+
+
 .main-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
+
 .main-header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 190px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+  }
+
   &:hover {
     opacity: 0.8;
   }

@@ -1,0 +1,18 @@
+.instructions__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 230px 230px;
+    gap: 37px 153px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 230px 230px 230px 230px;
+    grid-template-rows: 280px;
+    gap: 94px;
+  }
+}
