@@ -16,3 +16,14 @@
   line-height: 16px;
   text-align: center;
 }
+
+.product-card__order-button {
+  width: 280px;
+  min-height: 40px;
+  padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 169px;
+  }
+}
+
