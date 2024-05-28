@@ -1,23 +1,31 @@
 
 
-.instructions__wrapper {
-  padding: 0 20px 49px;
-}
-
-.instructions__item {
-  position: relative;
-}
-
 .instruction--nutrients {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#1");
+    background-size: 112px 230px;
+    background-repeat: no-repeat;
+    background-position: 118px 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
     background-color: #68b738;
     height: 60px;
     width: 60px;
-    top: 10;
+    top: 0;
     left: 0;
+
+
+    @media (min-width: $tablet-width) {
+      height: 80px;
+      width: 80px;
+      top: 0;
+      left: 0;
+    }
   }
+
 
   &::after {
     content: "";
@@ -27,20 +35,42 @@
     height: 50px;
     width: 36px;
     background-repeat: no-repeat;
-    top: 17px;
+    top: 7px;
     left: 12px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 30px 32px;
+      width: 30px;
+      height: 32px;
+      top: 22px;
+      left: 23px;
+    }
   }
 }
 
 .instruction--water {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#2");
+    background-size: 134px 230px;
+    background-repeat: no-repeat;
+    background-position: 112px 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
     background-color: #68b738;
     height: 60px;
     width: 60px;
-    top: 10;
+    top: 0;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      height: 80px;
+      width: 80px;
+      top: 0;
+      left: 0;
+    }
   }
 
   &::after {
@@ -51,20 +81,43 @@
     height: 50px;
     width: 36px;
     background-repeat: no-repeat;
-    top: 17px;
+    top: 5px;
     left: 12px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 26px 29px;
+      width: 26px;
+      height: 29px;
+      top: 22px;
+      left: 25px;
+    }
   }
 }
 
+
 .instruction--meal {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#3");
+    background-size: 134px 230px;
+    background-repeat: no-repeat;
+    background-position: 113px 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
     background-color: #68b738;
     height: 60px;
     width: 60px;
-    top: 10;
+    top: 0;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      height: 80px;
+      width: 80px;
+      top: 0;
+      left: 0;
+    }
   }
 
   &::after {
@@ -75,20 +128,42 @@
     height: 50px;
     width: 36px;
     background-repeat: no-repeat;
-    top: 17px;
+    top: 7px;
     left: 12px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 25px 30px;
+      width: 25px;
+      height: 30px;
+      top: 25px;
+      left: 25px;
+    }
   }
 }
 
 .instruction--time {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#4");
+    background-size: 134px 230px;
+    background-repeat: no-repeat;
+    background-position: 113px 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
     background-color: #68b738;
     height: 60px;
     width: 60px;
-    top: 10;
+    top: 0;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      height: 80px;
+      width: 80px;
+      top: 0;
+      left: 0;
+    }
   }
 
   &::after {
@@ -99,10 +174,19 @@
     height: 50px;
     width: 36px;
     background-repeat: no-repeat;
-    top: 17px;
+    top: 6px;
     left: 12px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 26px 30px;
+      width: 25px;
+      height: 30px;
+      top: 24px;
+      left: 27px;
+    }
   }
 }
+
 
 .instruction__description {
   font-family: $content-font;
@@ -111,5 +195,12 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  width: 200px;
+  max-width: 200px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 243px;
+  }
 }

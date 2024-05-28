@@ -1,9 +1,53 @@
+.location iframe {
+  margin: 0 auto;
+  background-image: image-set("../../images/location-map-mobile@1x.jpg" 1x, "../../images/location-map-mobile@2x.jpg" 2x);
+  background-size: 320px 362px;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100%;
+  min-height: 362px;
+  border: none;
+  display: block;
+  max-width: 320px;
+  max-height: 362px;
+
+
+  @media (min-width: $tablet-width) {
+    background-image: image-set("../../images/location-map-tablet@1x.jpg" 1x, "../../images/location-map-tablet@2x.jpg" 2x);
+    background-size: 768px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: image-set("../../images/location-map-desktop@1x.jpg" 1x, "../../images/location-map-desktop@2x.jpg" 2x);
+    background-size: 1440px 400px;
+  }
+}
+
+
 .location__wrapper {
   padding: 26px 20px;
+  width: 320px;
+  margin: 0 auto;
+
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    min-height: 200px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
 }
 
 .location__address {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-grow: 1;
 }

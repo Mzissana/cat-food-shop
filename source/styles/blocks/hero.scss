@@ -1,21 +1,26 @@
 .hero {
+  width: 320px;
+  margin: 0 auto;
   color: #ffffff;
   background-image: image-set("../../images/hungry-cat-mobile@1x.jpg" 1x, "../../images/hungry-cat-mobile@2x.jpg" 2x);
   background-repeat: no-repeat;
   background-size: 320px, 302px;
 
   @media (min-width: $tablet-width) {
+    width: 768px;
     background-color: #ffffff;
     color: #000000;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     background-image: image-set("../../images/hungry-cat-desktop@1x.jpg" 1x, "../../images/hungry-cat-desktop@2x.jpg" 2x);
     background-repeat: no-repeat;
     background-size: 720px, 694px;
     color: #000000;
-    background-position: right;
+    background-position: right bottom;
+    min-height: 580px;
   }
 }
 
@@ -24,8 +29,38 @@
   flex-direction: column;
   align-items: center;
   padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 919px;
+    min-height: 580px;
+    padding-left: 190px;
+    padding-top: 110px;
+  }
 }
 
+.hero__header {
+  text-align: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    max-width: 510px;
+    margin-bottom: 40px;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
 
 .hero__description {
   font-family: $title-font;
@@ -35,11 +70,50 @@
   text-transform: uppercase;
   text-align: center;
   padding: 27px 35px 0 36px;
+
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1em;
+    padding: 0 0 0 90px;
+    max-width: 510px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .hero__button {
-  width: 280px;
-  height: 40px;
+  min-width: 280px;
+  min-height: 40px;
+  font-size: 16px;
+  line-height: 20px;
   padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 244px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 26px;
+    position: absolute;
+    top: 230px;
+    left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 340px;
+    left: 190px;
+  }
+}
+
+.hero__image {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 29px;
+    left: 560px;
+  }
 }
 

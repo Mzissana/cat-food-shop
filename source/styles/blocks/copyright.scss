@@ -1,3 +1,15 @@
+.copyright__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 280px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 168px;
+  }
+}
+
 .copyright__text {
   font-family: $content-font;
   color: #444444;

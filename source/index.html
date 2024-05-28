@@ -17,44 +17,46 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-      </picture>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
-        <img src="images/logo-text.svg" width="101" height="18" alt="Товарный знак компании Cat Energy">
-      </picture>
-    </a>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
+          <img src="images/logo-text.svg" width="101" height="18" alt="Товарный знак компании Cat Energy">
+        </picture>
+      </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <img class="main-nav__open-button" src="icons/stack.svg#open-menu-icon" width="24" height="24" alt="Открыть меню">
-        <img class="main-nav__close-button" src="icons/stack.svg#close-menu-icon" width="24" height="24" alt="Закрыть меню">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link " href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link " href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <img class="main-nav__open-button" src="icons/stack.svg#open-menu-icon" width="24" height="24" alt="Открыть меню">
+          <img class="main-nav__close-button" src="icons/stack.svg#close-menu-icon" width="24" height="24" alt="Закрыть меню">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link " href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link " href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="main-container">
@@ -169,12 +171,7 @@
           </p>
         </div>
       </div>
-      <picture>
-        <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-map-desktop@1x.jpg 1x, images/location-map-desktop@2x.jpg 2x">
-        <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/location-map-tablet@1x.jpg 1x, images/location-map-tablet@2x.jpg 2x">
-        <img class="location__map" src="images/location-map-mobile@1x.jpg" srcset="images/location-map-mobile@2x.jpg" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362">
-      </picture>
-
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610246!2d30.3230474!3d59.9387165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1716302088501!5m2!1sen!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
 
@@ -184,7 +181,7 @@
         <img src="images/logo-text.svg" width="128" height="24" alt="Товарный знак компании Cat Energy">
       </a>
 
-      <div class="socials">
+      <div class="main-footer__socials socials">
         <ul class="socials__list">
           <li class="socials__item">
             <a class="socials__link" href="https://vk.com/htmlacademy">
@@ -210,10 +207,10 @@
 
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/">
+          <span class="copyright__text">HTML Academy</span>
           <svg class="copyright__link-icon" width="27" height="34">
             <use href="icons/stack.svg#html-academy-icon"></use>
           </svg>
-          <span class="copyright__text">HTML Academy</span>
         </a>
       </div>
     </div>

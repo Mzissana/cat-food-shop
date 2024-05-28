@@ -1,12 +1,33 @@
 .plan {
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   padding: 30px 33px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 61px 55px 52px;
+  }
 }
 
 .plan__title {
   padding-left: 70px;
+  font-size: 24px;
+  line-height: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .plan--lose-weight {
@@ -19,6 +40,20 @@
     border-radius: 50%;
     top: 24px;
     left: 20px;
+
+    @media (min-width: $tablet-width) {
+      height: 200px;
+      width: 200px;
+      top: 20%;
+      left: 445px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 100px;
+      width: 100px;
+      top: 47px;
+      left: 52px;
+    }
   }
 
   &::after {
@@ -31,6 +66,22 @@
     background-repeat: no-repeat;
     top: 21px;
     left: 26px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 140px 194px;
+      width: 140px;
+      height: 194px;
+      top: 19%;
+      left: 475px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 70px 97px;
+      width: 70px;
+      height: 97px;
+      top: 47px;
+      left: 67px;
+    }
   }
 }
 
@@ -44,6 +95,20 @@
     border-radius: 50%;
     top: 25px;
     left: 20px;
+
+    @media (min-width: $tablet-width) {
+      height: 200px;
+      width: 200px;
+      top: 20%;
+      left: 445px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 100px;
+      width: 100px;
+      top: 47px;
+      left: 52px;
+    }
   }
 
   &::after {
@@ -56,12 +121,39 @@
     background-repeat: no-repeat;
     top: 38px;
     left: 10;
+
+    @media (min-width: $tablet-width) {
+      background-size: 268px 112px;
+      width: 268px;
+      height: 112px;
+      top: 35%;
+      left: 411px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 134px 56px;
+      width: 134px;
+      height: 56px;
+      top: 20%;
+      left: 37px;
+    }
   }
 }
 
 .plan__description {
   padding-top: 22px;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 0 23px;
+  }
 }
 
 .plan__link {
@@ -75,6 +167,14 @@
   background-size: 24px 12px;
   background-repeat: no-repeat;
   background-position: 102px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    background-position: 129px;
+  }
 
   &:active {
     opacity: 0.3;

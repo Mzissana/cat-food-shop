@@ -1,14 +1,6 @@
 .page__body {
-  margin: 0 auto;
-  width: 320px;
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
+  margin: 0;
+  height: 100%;
 }

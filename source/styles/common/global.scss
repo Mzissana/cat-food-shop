@@ -11,6 +11,10 @@ body {
   background-color: $background-color;
 }
 
+img {
+  display: block;
+}
+
 button {
   padding: 0;
   border: none;

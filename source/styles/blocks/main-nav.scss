@@ -3,6 +3,8 @@
 }
 
 .main-nav__toggle {
+  margin-left: auto;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -14,16 +16,15 @@
 
 .main-nav {
   width: 24px;
-
+  margin-left: auto;
 
   @media (min-width: $tablet-width) {
-    width: 704px;
-    margin: 0 auto;
+    min-width: 436px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
+    min-width: 475px;
   }
 }
 
@@ -36,7 +37,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    color: #ffffff;
   }
 }

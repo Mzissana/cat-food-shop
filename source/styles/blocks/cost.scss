@@ -6,5 +6,11 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    text-align: right;
+    max-width: 174px;
+  }
 }
 

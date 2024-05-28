@@ -2,13 +2,11 @@
   font-family: $title-font;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1em;
+  }
 }
 
-.page-header--base {
-  color: #000000;
-}
-
-.page-header--contrast {
-  color: #ffffff;
-}

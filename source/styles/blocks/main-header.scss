@@ -1,13 +1,30 @@
-
-
 .main-header {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.main-header__wrapper {
   padding: 13px 21px 14px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 65px;
-}
+  min-width: 320px;
 
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 25px 0 24px;
+    font-family: $title-font;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    min-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
+  }
+}
 
 .main-header__logo {
   display: flex;
