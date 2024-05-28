@@ -30,14 +30,18 @@
 
   position: relative;
 
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
   &::after {
     content: "";
     background-color: #d9d9d9;
     position: absolute;
     height: 1px;
-    width: 280px;
+    width: 100%;
     bottom: -20px;
-    left: -76px;
+    left: 0;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -53,17 +57,27 @@
   }
 }
 
+.main-footer__logo-img {
+  margin: 0 auto;
+}
+
 .main-footer__socials {
   position: relative;
+
+
+  @media (max-width: $mobile-width-only) {
+    min-width: 100%;
+  }
+
 
   &::after {
     content: "";
     background-color: #d9d9d9;
     position: absolute;
     height: 1px;
-    width: 280px;
+    width: 100%;
     bottom: -20px;
-    left: -76px;
+    left: 0;
 
     @media (min-width: $tablet-width) {
       display: none;

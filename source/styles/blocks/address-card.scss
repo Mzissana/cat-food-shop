@@ -41,6 +41,10 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .address-card__city {
@@ -48,5 +52,9 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
   }
 }

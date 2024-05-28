@@ -8,19 +8,24 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    background-color: #ffffff;
     color: #000000;
     background-image: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    background-image: image-set("../../images/hungry-cat-desktop@1x.jpg" 1x, "../../images/hungry-cat-desktop@2x.jpg" 2x);
-    background-repeat: no-repeat;
-    background-size: 720px, 694px;
+
     color: #000000;
-    background-position: right bottom;
     min-height: 580px;
+
+    &::after {
+      content: image-set("../../images/hungry-cat-desktop@1x.jpg" 1x, "../../images/hungry-cat-desktop@2x.jpg" 2x);
+      position: absolute;
+      size: 720px, 694px;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
   }
 }
 

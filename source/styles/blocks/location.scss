@@ -1,3 +1,8 @@
+
+.location {
+  position: relative;
+}
+
 .location iframe {
   margin: 0 auto;
   background-image: image-set("../../images/location-map-mobile@1x.jpg" 1x, "../../images/location-map-mobile@2x.jpg" 2x);
@@ -41,7 +46,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
+    position: absolute;
+    max-width: 565px;
+    height: 199px;
+    top: 95px;
+    left: 110px;
+    background-color: #ffffff;
+    padding: 60px 78px 60px 80px;
   }
 }
 

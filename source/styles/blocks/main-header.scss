@@ -1,6 +1,12 @@
 .main-header {
-  @media (min-width: $desktop-width) {
+  max-width: 100%;
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -10,11 +16,16 @@
   align-items: center;
   justify-content: space-between;
   min-width: 320px;
+  font-size: 20px;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: $title-font;
+  position: relative;
 
 
   @media (min-width: $tablet-width) {
     padding: 25px 25px 0 24px;
-    font-family: $title-font;
+
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
