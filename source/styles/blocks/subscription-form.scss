@@ -1,8 +1,39 @@
+
+.subscription-form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 632px;
+  }
+}
+
+.subscription-form__button {
+  padding: 15px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}
+
 .subscription-form__input {
   font-family: $title-font;
   color: #444444;
   font-size: 20px;
   font-weight: 400;
-  line-height: 29.64px;
+  line-height: 28px;
   text-align: left;
+  padding: 13px;
+  min-width: 280px;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 0 0 0 1px #cdcdcd;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    min-width: 376px;
+  }
 }
+

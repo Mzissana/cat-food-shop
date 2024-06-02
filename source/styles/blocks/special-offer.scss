@@ -1,6 +1,24 @@
+
 .special-offer {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+
+    padding: 70px 0 80px;
+  }
+}
+
+.special-offer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding: 20px 20px 36px;
   background-color: #68b738;
   width: 280px;
+
   height: 290px;
   background-image: image-set("../../images/catalog/cat-in-backpack-mobile@1x.jpg" 1x, "../../images/catalog/cat-in-backpack-mobile@2x.jpg" 2x);
   background-size: 280px 290px;
@@ -12,6 +30,10 @@
     background-image: image-set("../../images/catalog/cat-in-backpack-tablet@1x.jpg" 1x, "../../images/catalog/cat-in-backpack-tablet@2x.jpg" 2x);
     background-size: 707px 202px;
     background-repeat: no-repeat;
+    position: relative;
+    justify-content: center;
+    align-items: end;
+    padding: 0 125px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,8 +53,9 @@
   line-height: 20px;
   text-align: center;
   position: relative;
+  max-width: 161px;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     background-image: url("../../icons/stack.svg#gift-icon");
@@ -40,8 +63,19 @@
     height: 80px;
     width: 78px;
     background-repeat: no-repeat;
-    top: 0;
-    left: 0;
+    top: -130px;
+    left: 43px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    text-align: left;
+
+
+    &::before {
+      top: 57px;
+      left: 77px;
+    }
   }
 }
 

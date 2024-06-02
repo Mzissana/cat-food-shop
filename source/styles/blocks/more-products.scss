@@ -1,5 +1,33 @@
-.catalog__more {
-  position: relative;
+.more-products {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  min-width: 100%;
+  min-height: 207px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 81px;
+    border: solid 2px #f2f2f2;
+    min-height: 430px;
+    max-width: 324px;
+    position: relative;
+  }
+}
+
+.more-products__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 78px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 360px;
+  }
 }
 
 .more-products__header {
@@ -10,6 +38,8 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 8px;
+  position: relative;
 
   &::after {
     content: "";
@@ -19,8 +49,28 @@
     height: 30px;
     width: 30px;
     background-repeat: no-repeat;
-    top: 7px;
-    left: 12px;
+    top: -53px;
+    left: 50%;
+    translate: -15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 134px;
+    position: static;
+    margin-bottom: 23px;
+
+    &::after {
+      background-image: url("../../icons/stack.svg#more-icon");
+      background-size: 60px 60px;
+      height: 60px;
+      width: 60px;
+      background-repeat: no-repeat;
+      top: 50px;
+      left: 50%;
+      translate: -30px;
+    }
   }
 }
 
@@ -32,4 +82,21 @@
   font-weight: 400;
   line-height: 16px;
   text-align: center;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 170px;
+  }
+}
+
+.more-products__button {
+  padding: 10px;
+
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
