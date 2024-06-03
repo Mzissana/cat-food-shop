@@ -24,9 +24,10 @@
     background-size: 768px 400px;
     background-repeat: no-repeat;
     background-position: center;
+    max-height: 400px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     background-image: image-set("../../images/location-map-desktop@1x.jpg" 1x, "../../images/location-map-desktop@2x.jpg" 2x);
     background-size: 1440px 400px;
   }
@@ -40,9 +41,9 @@
 
 
   @media (min-width: $tablet-width) {
-    width: 668px;
+    width: 768px;
     min-height: 200px;
-    padding: 30px;
+    padding: 60px 70px;
     display: flex;
     justify-content: space-between;
   }

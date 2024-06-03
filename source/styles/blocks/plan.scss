@@ -2,10 +2,10 @@
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
-  padding: 30px 20px 18px;
+  padding: 30px 20px 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 53px 52px;
+    padding: 77px 316px 56px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,7 +45,7 @@
     @media (min-width: $tablet-width) {
       height: 200px;
       width: 200px;
-      top: 81px;
+      top: 92px;
       left: 445px;
     }
 
@@ -72,7 +72,7 @@
       background-size: 140px 194px;
       width: 140px;
       height: 194px;
-      top: 75px;
+      top: 81px;
       left: 475px;
     }
 
@@ -80,7 +80,7 @@
       background-size: 70px 97px;
       width: 70px;
       height: 97px;
-      top: 47px;
+      top: 41px;
       left: 67px;
     }
   }
@@ -142,7 +142,7 @@
 }
 
 .plan__description {
-  padding-top: 22px;
+  padding-top: 29px;
   padding-bottom: 23px;
 
   margin: 0;
@@ -152,11 +152,13 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+    padding: 0;
+    margin-bottom: 52px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
-    margin: 0 0 23px;
+    margin: 0 0 26px;
   }
 }
 

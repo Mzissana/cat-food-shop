@@ -33,10 +33,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 26px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 65px;
     flex-direction: column;
     align-items: start;
     position: relative;
@@ -57,9 +57,9 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    max-width: 510px;
+    max-width: 544px;
     margin-bottom: 40px;
-    padding-left: 90px;
+    padding-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
@@ -81,7 +81,7 @@
     text-align: left;
     font-size: 20px;
     line-height: 1em;
-    padding: 0 0 29px 90px;
+    padding: 0 0 21px 120px;
     max-width: 510px;
     margin: 0;
   }
@@ -104,8 +104,8 @@
     font-size: 20px;
     line-height: 26px;
     position: absolute;
-    top: 230px;
-    left: 90px;
+    top: 295px;
+    left: 120px;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,10 +115,16 @@
 }
 
 .hero__image {
+  @media (min-width: $tablet-width) {
+
+    margin-left: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 29px;
     left: 560px;
+    margin: 0;
   }
 }
 

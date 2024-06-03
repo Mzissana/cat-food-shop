@@ -1,8 +1,22 @@
 .socials__list {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 25px;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+  }
+}
+
+.socials__item {
+  @media (min-width: $desktop-width) {
+    width: 28px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .socials__icon--youtube {
@@ -22,8 +36,8 @@
 }
 
 .socials__icon--vkontakte {
-  width: 24;
-  height: 19;
+  width: 24px;
+  height: 19px;
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#vkontakte-icon");
 

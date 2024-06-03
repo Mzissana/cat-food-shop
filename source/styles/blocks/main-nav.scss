@@ -24,6 +24,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
     min-width: 475px;
   }
 }
@@ -100,6 +102,10 @@
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
+}
+
+.main-nav__catalog-list {
+  color: #111111;
 }
 
 .main-nav__item {

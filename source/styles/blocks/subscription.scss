@@ -1,39 +1,79 @@
 .subscription {
-  flex-direction: column;
+  display: flex;
   min-width: 320px;
   max-width: 100%;
-  display: flex;
+  position: relative;
+  flex-direction: column;
   align-items: center;
-  padding: 40px 0;
+  padding: 0 0 40px;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 80px;
   }
-}
 
-.subscription__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  min-width: 320px;
-  max-width: 100%;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 68px;
+  @media (min-width: $desktop-width) {
+    padding: 0 0 104px;
   }
 }
 
+
 .subscription__title {
-  text-transform: none;
   font-size: 24px;
   line-height: 1em;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
+  text-transform: none;
+  width: fit-content;
+  position: relative;
+  background: #ffffff;
+  padding: 0 20px;
+  box-shadow: -20px 0 0 0 #ffffff, 20px 0 0 0 #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    top: 12px;
+    right: 0;
+    background: #68b738;
+    box-shadow: 100vw 0 0 0 #68b738;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 66px;
+    padding: 0 40px;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 0 #ffffff, -0 0 0 0 #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0;
+    box-shadow: 40 0 0 0 #ffffff, -40 0 0 0 #ffffff;
+
+    margin-bottom: 72px;
+
+    &::before {
+      top: 17px;
+    }
+  }
+}
+
+.subscription__wrapper {
+
+  max-width: 280px;
+
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
   }
 }
 
@@ -50,7 +90,25 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
-    max-width: 632px;
+    min-width: 708px;
+    padding: 0 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.subscription__form {
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    padding: 0 40px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    padding: 0 234px;
+    min-width: none;
   }
 }
 

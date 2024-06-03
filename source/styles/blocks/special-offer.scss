@@ -6,7 +6,12 @@
 
   @media (min-width: $tablet-width) {
 
-    padding: 70px 0 80px;
+    padding: 66px 0 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: image;
+    padding: 0;
   }
 }
 
@@ -37,11 +42,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
     height: 288px;
     background-image: image-set("../../images/catalog/cat-in-backpack-desktop@1x.jpg" 1x, "../../images/catalog/cat-in-backpack-desktop@2x.jpg" 2x);
     background-size: 245px 288px;
     background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 20px 43px;
+    background-color: #68b738;
+    width: 245px;
   }
 }
 
@@ -76,6 +88,10 @@
       top: 57px;
       left: 77px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 

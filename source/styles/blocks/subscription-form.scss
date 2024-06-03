@@ -6,6 +6,11 @@
     align-items: center;
     min-width: 632px;
   }
+
+  @media (min-width: $desktop-width) {
+
+    min-width: 752px;
+  }
 }
 
 .subscription-form__button {
@@ -34,6 +39,11 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     min-width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    min-width: 496px;
   }
 }
 
