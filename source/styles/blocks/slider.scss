@@ -1,5 +1,19 @@
 .slider {
   position: relative;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+
+.slider__image-before,
+.slider__image-after {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .slider__button {
