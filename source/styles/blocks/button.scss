@@ -9,11 +9,29 @@
 .button--program {
   color: #ffffff;
   background-color: #68b738;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgb(255, 255, 255, 0.7);
+  }
 }
 
 .button--order {
   color: #ffffff;
   background-color: #68b738;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgb(255, 255, 255, 0.7);
+  }
 }
 
 .button--secondary {
@@ -27,4 +45,13 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgb(255, 255, 255, 0.7);
+  }
 }

@@ -29,11 +29,11 @@
   font-weight: 400;
   line-height: 28px;
   text-align: left;
-  padding: 13px;
+  padding: 11px;
   min-width: 280px;
   text-transform: uppercase;
   border: none;
-  box-shadow: 0 0 0 1px #cdcdcd;
+  box-shadow: 0 0 0 2px #cdcdcd;
   margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
@@ -45,5 +45,15 @@
     margin: 0;
     min-width: 496px;
   }
+
+  &:focus {
+    box-shadow: 0 0 0 2px #000000;
+  }
+
+  &:error {
+    box-shadow: 0 0 0 2px #000000;
+  }
+
+
 }
 
