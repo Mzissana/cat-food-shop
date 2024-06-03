@@ -49,4 +49,8 @@
   &:focus {
     box-shadow: 0 0 0 2px #000000;
   }
+
+  &:invalid {
+    box-shadow: 0 0 0 2px #ff8282;
+  }
 }
