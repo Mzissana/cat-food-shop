@@ -60,6 +60,7 @@
   padding: 26px 20px;
   width: 320px;
   margin: 0 auto;
+  position: relative;
 
 
   @media (min-width: $tablet-width) {
@@ -78,6 +79,37 @@
     left: 110px;
     background-color: #ffffff;
     padding: 60px 78px 60px 80px;
+  }
+
+  &::after {
+    content:
+      image-set("../../images/map-pin-mobile@1x.webp" 1x,
+      "../../images/map-pin-mobile@2x.webp" 2x,
+      "../../images/map-pin-mobile@1x.png" 1x,
+      "../../images/map-pin-mobile@2x.png" 2x);
+    position: absolute;
+    width: 56px;
+    height: 52px;
+    top: 250px;
+    left: 140px;
+
+    @media (min-width: $tablet-width) {
+      content:
+        image-set("../../images/map-pin-tablet@1x.webp" 1x,
+        "../../images/map-pin-tablet@2x.webp" 2x,
+        "../../images/map-pin-tablet@1x.png" 1x,
+        "../../images/map-pin-tablet@2x.png" 2x);
+      width: 113px;
+      height: 106px;
+      top: 200px;
+      left: 350px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      left: auto;
+      right: -200px;
+    }
   }
 }
 
