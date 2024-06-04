@@ -9,11 +9,17 @@
 }
 
 
-.slider__image-before,
-.slider__image-after {
+.slider__image-before {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+
+.slider__image-after {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .slider__button {
@@ -25,6 +31,7 @@
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 1;
 
   &:hover {
     background-color: #68b738;
@@ -64,6 +71,7 @@
     top: 50%;
     left: 2px;
     transform: translate(-50%, -50%);
+    z-index: 1;
   }
 
   &::after {
@@ -78,5 +86,6 @@
     top: 50%;
     left: 2px;
     transform: translate(-50%, -50%);
+    z-index: 1;
   }
 }
