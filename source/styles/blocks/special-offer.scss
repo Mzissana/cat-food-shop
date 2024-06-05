@@ -1,8 +1,11 @@
 
 .special-offer {
+  display: flex;
+  min-width: 320px;
+  max-width: 100%;
+  position: relative;
   flex-direction: column;
   align-items: center;
-  display: flex;
 
   @media (min-width: $tablet-width) {
 
@@ -20,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  padding: 20px 20px 36px;
+  padding: 20px 20px 42px;
   background-color: #68b738;
   width: 280px;
 
@@ -76,7 +79,7 @@
     width: 78px;
     background-repeat: no-repeat;
     top: -130px;
-    left: 43px;
+    left: 40px;
   }
 
   @media (min-width: $tablet-width) {

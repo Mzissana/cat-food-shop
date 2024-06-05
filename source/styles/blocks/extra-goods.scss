@@ -25,11 +25,12 @@
   @media (min-width: $desktop-width) {
     display: grid;
     align-items: center;
-    justify-content: center;
+
     grid-template-areas:
       "header header"
       "cards  image";
-    column-gap: 80px;
+    column-gap: 40px;
+    max-width: 1220px;
   }
 }
 
