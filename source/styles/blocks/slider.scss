@@ -31,6 +31,7 @@
   position: absolute;
   top: 0;
   left: 50%;
+  transform: translate(-50%, 0);
   z-index: 1;
 
   &:hover {
@@ -69,7 +70,7 @@
     height: 40px;
     width: 40px;
     top: 50%;
-    left: 2px;
+    left: 0;
     transform: translate(-50%, -50%);
     z-index: 1;
   }
@@ -84,7 +85,7 @@
     width: 24px;
     height: 18px;
     top: 50%;
-    left: 2px;
+    left: 0;
     transform: translate(-50%, -50%);
     z-index: 1;
   }

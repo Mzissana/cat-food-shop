@@ -5,9 +5,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(#ffffff 55%, #f2f2f2 55%);
-
-    padding: 0 30px 101px;
+    background-image: linear-gradient(#ffffff 57%, #f2f2f2 57%);
     align-items: center;
   }
 
@@ -27,9 +25,10 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    max-width: 708px;
-
+    max-width: 768px;
+    padding: 45px 30px 105px;
     margin: 0;
+    align-items: center;
   }
 
 
@@ -38,7 +37,8 @@
     margin: 0;
     grid-template-columns: 436px 560px;
     gap: 224px;
-    padding: 19px 0 0;
+    align-items: last baseline;
+    padding: 0;
     display: grid;
   }
 }
@@ -46,7 +46,6 @@
 
 .example__story-title {
   text-align: left;
-  margin-bottom: 40px;
   line-height: 40px;
 
   @media (min-width: $tablet-width) {
@@ -61,7 +60,7 @@
 
   color: #444444;
   text-align: left;
-  padding: 0 0 20px;
+  padding: 38px 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -91,6 +90,7 @@
     align-items: start;
     justify-content: center;
     gap: 60px;
+    padding-bottom: 74px;
   }
 }
 
@@ -98,10 +98,11 @@
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr 1fr;
+  margin: 0;
 
 
   @media (min-width: $tablet-width) {
-
+    min-width: 365px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,6 +175,7 @@
   text-transform: uppercase;
   font-size: 24px;
   line-height: 1em;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     font-family: $title-font;
@@ -211,21 +213,27 @@
   font-family: $title-font;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 34px;
+  padding-top: 31px;
   padding-bottom: 20px;
   font-size: 14px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 11px 0 17px;
-    max-width: 180px;
+    max-width: 174px;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0;
     max-width: 436px;
+  }
+}
+
+.example__cost-sum {
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
   }
 }

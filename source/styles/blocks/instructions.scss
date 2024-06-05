@@ -4,11 +4,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 100%;
-    padding-bottom: 47px;
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: 100%;
 
     &::after {
       content: "";
@@ -32,15 +31,15 @@
 
 .instructions__wrapper {
   padding: 0 20px 49px;
-  max-width: 320px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
-    max-width: 708px;
-    padding: 0;
+    width: 768px;
+    padding: 0 30px 55px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
+    width: 1440px;
     padding: 0 110px 69px;
   }
 }
@@ -65,7 +64,7 @@
     display: grid;
     grid-template-columns: 280px 280px;
     grid-template-rows: 230px 230px;
-    gap: 77px 137px;
+    gap: 85px 104px;
   }
 
   @media (min-width: $desktop-width) {
